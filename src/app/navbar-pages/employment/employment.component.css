@@ -1,0 +1,69 @@
+.content {
+    position: relative;
+    width: 100%;
+    z-index: 999;
+
+    margin-bottom: 3rem;
+   
+}
+
+.button span{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.button li span  , .button h4{
+    color:var(--primary-color);
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+ .toggle{
+    position: absolute;
+    left: 2rem;
+    top: 1.75rem;
+    transform: translateY(-50%);
+    z-index: 888;
+}
+.card{
+    margin-top: 5rem !important;
+    border: none !important;
+}
+.card i{
+    color: var(--primary-color);
+}
+.card img{
+    width: 2rem;
+    
+}
+.card button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+section .content   ul{
+    padding: 0 1rem;
+}
+section .content   ul li{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.8;
+}
+section .content ul li i{
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+section .content button{
+    background-color: var(--primary-color);
+    margin: 3rem;
+    padding: 1rem 2.5rem;
+}
+@media(max-width:992px){
+    section .content   ul li{
+        font-size: 1.5rem;
+
+    }
+
+    section .content ul li i{
+        font-size: 1rem;
+        margin-left: 0.5rem;
+    }
+}

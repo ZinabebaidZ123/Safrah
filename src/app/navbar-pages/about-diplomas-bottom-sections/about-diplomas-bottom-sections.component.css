@@ -1,0 +1,135 @@
+
+/* start structure-section----------------------- */
+
+.vertical-line{
+    position: relative;
+    /* z-index: 99; */
+}
+
+.structure .title{
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1rem 3rem;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 3rem;
+    position: relative;
+ 
+
+}
+.structure .title::after{
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 5.25rem;
+    height: 100%;
+    width: 3px;
+    background-color: var(--primary-color);
+    z-index: -1;
+    
+}
+.structure .st-heading h3{
+   position: relative;
+   /* z-index: 999; */
+   /* overflow: hidden; */
+}
+
+.structure .st-heading h3::after{
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 5.025rem;
+    height: 100%;
+    width: 3px;
+    background-color: var(--primary-color);
+    z-index: -1;
+  
+
+}
+
+.structure  h3{
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.structure .structure-heading{
+    background-color: var(--primary-color);
+   padding: 1.5rem 2.5rem 3rem;
+   position: relative;
+   
+
+}
+
+.structure .structure-heading h3{
+    line-height: 3;
+}
+.section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    
+  }
+  
+  .st-heading {
+    width: 32%;
+    text-align: center;
+    z-index:888;
+    position: relative;
+  }
+  .st-heading h3{
+    background-color: #fff;
+    transform: translateY(-4rem);
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .subheadings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 2rem 0;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    transform: translateY(-2rem);
+  }
+  .subheadings h4{
+    background-color: #fff;
+    /* padding: 1rem 2.5rem; */
+    width: 80%;
+    font-weight: 700;
+  }
+
+  @media(max-width:525px){
+    .st-heading h3{
+        padding: 0;
+        transform: translateY(-2rem);
+        margin-bottom: 2rem;
+    }
+    .structure .st-heading h3::after{
+        content: "";
+        position: absolute;
+        right: 50%;
+        top: 3.5rem;
+        height: 100%;
+        width: 3px;
+        background-color: var(--primary-color);
+        z-index: -1;
+    
+    }
+    .subheadings h4{
+        font-size: 1.25rem;
+        line-height: 1.4;
+        width: 90%;
+        
+    }
+
+    .structure .title{
+        width: 60%;
+    }
+  }

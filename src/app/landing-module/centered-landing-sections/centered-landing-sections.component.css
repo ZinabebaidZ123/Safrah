@@ -1,0 +1,125 @@
+/* start of events style section***************************** */
+
+
+
+/* end of news section style*************************************** */
+
+.events .col-lg-3{
+    position: relative !important;
+    padding: 2rem !important;
+    
+}
+.events .row{
+    padding-top: 6rem;
+}
+.events .event-date  img{
+    width: 4.375rem;
+    height: 4.375rem;
+    position: absolute;
+}
+.events .event-date .img1{
+    bottom: 100%;
+    left: 50%;
+  
+    transform: translate(-50%);
+}
+.events .event-date .img2{
+    bottom: 90%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.events .date-layer{
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    
+    transform: translate(-50%);
+    color: #fff;
+}
+
+
+.events .event-info{
+   padding: 0.813rem 1rem; 
+   text-align: center;
+   border-radius: 1rem;
+}
+
+@media (max-width:992px){
+
+    .events .event-info{
+        margin-bottom: 3rem;
+     
+    }
+    .events .col-lg-3{
+        margin-top: 4rem;
+    }
+}
+/* end of events section style**************************************** */
+/* start of creator section******************************************* */
+
+.creator .creator-img{
+    padding-bottom: 3rem;
+    position: relative;
+ 
+}
+.creator .creator-img img {
+   width:80%;
+}
+.creator .col-lg-4 h3{
+    display: none;
+}
+.creator p{
+    text-align: justify;
+}
+.creator-info{
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+    right: 7%;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.75rem 1rem;
+}
+@media (max-width:992px){
+    .creator-info{
+       right: 0;
+    }
+  
+    .creator .col-lg-4  {
+        padding: 0 2rem;
+    }
+    .creator .col-lg-4 h3{
+        display: block;
+    }
+    .creator .col-lg-7{
+      padding: 2rem;
+    }
+    .creator  .col-lg-7 h3{
+        display: none;
+    }
+}
+.creator-info h4{
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.7;
+}
+.creator h3{
+    color: var(--primary-color);
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.creator p{
+    font-weight: 700;
+    font-size: 1.25;
+    line-height: 1.7;
+}
+.creator a{
+    font-weight: 700;
+    font-size: 1.25;
+    line-height: 1.7;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+/* end of creator style*************************************************** */
+

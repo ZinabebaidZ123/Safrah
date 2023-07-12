@@ -1,0 +1,99 @@
+/* start charity establishment section */
+body{
+    background-color: #ccc;
+}
+
+
+.charity-establishment{
+    position: relative;
+}
+
+
+.charity-establishment h2{
+   position: relative;
+   z-index: 55;
+}
+
+.charity-establishment p{
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+.charity-establishment .ch-establishment-img{
+    background-color: var(--primary-color);
+    width: 25rem;
+    height: 25rem;
+}
+/* start ch-file-section------------------- */
+.ch-file img{
+    width: 4.563rem;
+    height: 5.625rem;
+}
+h2 span{
+    position: relative;
+    z-index: 66;
+    display: inline-block;
+    
+}
+h2 span::before{
+    content: "";
+    position: absolute;
+    bottom: 1.7rem;
+    width: 100%;
+    height: 1rem;
+    z-index: -1;
+    background-color: var(--primary-color);
+}
+
+
+
+/* start charity-goals-section */
+.charity-goals {
+    position: relative;
+    overflow: hidden;
+    z-index: 88;
+}
+.charity-goals h2{
+    position: relative;
+    z-index: 66;
+}
+
+.charity-goals h3{
+    margin-bottom: 3rem;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.8;
+}
+.charity-goals ul{
+    list-style: circle;
+}
+.charity-goals ul li {
+    line-height: 1.9;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.charity-goals .layer{
+    position: absolute;
+    left: 0;
+    top: 22%;
+    width: 40%;
+    z-index: -1;
+  
+}
+@media(max-width:992px){
+    .charity-goals .layer{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 70%;
+        /* height: 100%; */
+        z-index: -1;
+        opacity: 0.8;
+      
+    }
+}
+
+/* start charity-info section */
+

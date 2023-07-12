@@ -1,0 +1,297 @@
+   <!-- start of news section------------------------------------------------- -->
+   <!-- <section class="news"  >
+    <img src="../../assets/imgs/news-bg.png" alt="" class="layer" />
+    <div class="container">
+      
+      <div class="heading"><h2 class="text-center right-circle" data-aos="fade-up" >أخبارنا</h2></div>
+       
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">أكاديمى</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">الإنجازات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">مشاركات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ">فعاليات</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row justify-content-between align-items-center" data-aos="fade-down" >
+        
+        <div class="col-lg-4 " *ngFor="let new of newsList">
+          <div class="news-card">
+            
+            <div *ngIf ="new.imgSrc.includes('classera') ; else otherImg ">
+            <div class="clasera-logo w-100  img">
+              <a routerLink="/news-details-page">
+              <img [src]="new.imgSrc " alt="">
+              </a>
+            </div>
+</div>
+<ng-template #otherImg>
+            <div class="img">
+              <a routerLink="/news-details-page">
+
+                <img
+                  [src]="new.imgSrc"
+                  alt=""
+                  class="w-100"
+                />
+                </a>
+                </div></ng-template>
+            
+            <div class="card-content">
+              <div class="box">
+                <p>
+                  {{new.content}}
+                </p>
+              </div>
+            
+              <div class="card-date">
+              <h6 class="">
+                15 <br/>
+                يناير
+              </h6></div>
+            </div>
+            
+          </div>
+         </a> 
+        </div>
+        
+        <div class="know-more d-flex justify-content-center">
+            <button (click) ="seeMore()">استكشف أكثر</button>
+           </div>
+        </div>
+        </div>
+</section> -->
+
+  
+<section class="news"  >
+  <img src="../../assets/imgs/news-bg.png" alt="" class="layer"  data-aos="fade-left"   
+  data-aos-easing="linear"
+  data-aos-duration="1400"   data-aos-delay="300"/>
+  <div class="container">
+    
+    <div class="heading"><h2 class="text-center right-circle" data-aos="fade-up" >أخبارنا</h2></div>
+     
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav">
+
+            <li class="nav-item" data-filter="ach">
+                  الإنجازات
+            </li>
+
+            <li class="nav-item" data-filter="academic">
+               أكاديمى
+            </li>
+         
+            <li class="nav-item" data-filter ="partec">
+                 مشاركات
+            </li>
+            <li class="nav-item" data-filter="events">
+                    فعاليات
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row justify-content-between align-items-center"  >
+      
+      <div class="col-lg-4 " data-product="ach"    data-aos-easing="linear"
+      data-aos-duration="1400"   data-aos-delay="300" data-aos="fade-right">
+        <div class="news-card">
+          
+          <div >
+          <div class="clasera-logo w-100  img">
+            <a routerLink="/news-details-page">
+            <img src="../../../assets/imgs/logo-classera.png" alt="">
+            </a>
+          </div>
+</div>
+
+          
+          <div class="card-content">
+            <div class="box">
+              <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing.
+              </p>
+            </div>
+          
+            <div class="card-date">
+            <h6 class="">
+              15 <br/>
+              يناير
+            </h6></div>
+          </div>
+          
+        </div>
+      <!-- </a> -->
+      </div>
+
+
+
+      <div class="col-lg-4 " data-product="academic">
+        <div class="news-card">
+          
+          <div >
+          <div class="clasera-logo w-100  img">
+            <a routerLink="/news-details-page">
+            <img src="../../../assets/imgs/logo-classera.png" alt="">
+            </a>
+          </div>
+</div>
+
+          
+          <div class="card-content">
+            <div class="box">
+              <p>
+             Lorem ipsum dolor
+              </p>
+            </div>
+          
+            <div class="card-date">
+            <h6 class="">
+              15 <br/>
+              يناير
+            </h6></div>
+          </div>
+          
+        </div>
+      <!-- </a> -->
+      </div>
+      
+      <div class="know-more d-flex justify-content-center">
+          <button (click) ="seeMore()">استكشف أكثر</button>
+         </div>
+      </div>
+      </div>
+</section>
+  <!-- start of events section------------------------------------------- -->
+  <section class="events ">
+    <div class="container">
+      <div class="heading ">
+      <h2 class="text-center right-circle"   data-aos-easing="linear"
+      data-aos-duration="1400"   data-aos-delay="300" data-aos="fade-right"
+      > ترقبو جديدنا</h2>
+      </div>
+      <div class="row justify-content-between align-items-center ">
+        <div class="col-lg-3  mb-3" >
+          <div class="event-date">
+            <img src="../../assets/imgs/square.svg" alt="" class="img1" />
+            <img
+              src="../../assets/imgs/rombo.svg"
+              alt=""
+              class="img2"
+            />
+            <h6 class="date-layer text-center ">
+              6  <br />
+              يوليو
+            </h6>
+          </div>
+          <div class="event-info bg-white shadow ">
+            <p>
+                  انطلاق التسجيل فى الدبلوم العالى
+            </p>
+          </div>
+        </div>
+  
+        <div class=" col-lg-3 mb-3" d >
+          <div class="event-date">
+            <img src="../../assets/imgs/square.svg" alt="" class="img1" />
+            <img
+              src="../../assets/imgs/rombo.svg"
+              alt=""
+              class="img2"
+            />
+            <h6 class="date-layer text-center ">
+              16 <br />
+              يوليو 
+            </h6>
+          </div>
+          <div class="event-info bg-white shadow">
+            <p>
+         انطلاق مبادرة تعاهد
+            </p>
+          </div>
+        </div>
+  
+        <div class="col-lg-3"  data-aos-easing="linear"
+        data-aos-duration="1400"   data-aos-delay="300" data-aos="fade-left">
+          <div class="event-date ">
+            <img src="../../assets/imgs/square.svg" alt="" class="img1" />
+            <img
+              src="../../assets/imgs/rombo.svg"
+              alt=""
+              class="img2"
+            />
+            <h6 class="date-layer text-center ">
+              20 <br />
+              أغسطس
+            </h6>
+          </div>
+          <div class="event-info bg-white shadow">
+            <p>
+          بدء البرامج الدراسية لعام 1445
+            </p>
+          </div>
+        </div>
+  
+            
+      </div>
+    </div>
+  </section>
+
+ 
+  
+  
+  <!-- end of events section--------------------------------------------------------- -->
+  <!-- start of creator section----------------------------------------- -->
+  <section class="creator position-relative" data-aos="fade-down">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-4  ">
+          <h3>كلمة المؤسس</h3>
+          <div class="creator-img">
+            <img src="../../assets/imgs/د كتور حسن 1.png" alt="" class="">
+            <div class="creator-info">
+              <h4>أ.د/ حسن محمّد باجودة</h4>
+            </div>
+          </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="content">
+              <h3>كلمة المؤسس</h3>
+              <p   data-aos-easing="linear"
+              data-aos-duration="1400"   data-aos-delay="300" data-aos="fade-left">القرآن الكريم هو الكتاب العزيز، الّذي لا يأتيه الباطل من بين يديه ولا من خلفه، تنزيل من حكيم حميد، وهو آخر الكتب السّماويّة وأشرفها والمهيمن عليها، وهو الكتاب السّماويّ الوحيد الّذي تكفّل الله تعالى بحفظه، لأنّه الكتاب الوحيد الذي يشتمل على المنهج والمعجزة معاً، فلا كتاب بعده، ولا رسول بعد محمّد صلى الله عليه وسلّم، وقد تحدّى الله به الإنس والجنّ كي يأتوا بسورة واحدةٍ من مثله فعجزوا. ولا يزداد هذا العجز بمرور الّليالي والأيّام إلّا رسوخاً. والله تعالى الّذي تكفّل بحفظ القرآن الكريم إلى يوم الدّين سخّر عباده الصّالحين للإسهام في حفظه،</p>
+  
+              <a href="">قراءة المزيد</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </section>
+
+
+
+
+

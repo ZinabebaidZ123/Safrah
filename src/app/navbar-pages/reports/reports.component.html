@@ -1,0 +1,54 @@
+<app-navbar></app-navbar>
+<app-banner></app-banner>
+
+
+<section class="general-charity   " *ngFor="let item of list ; let i = index">
+
+    <div *ngIf="i %2==0 ; else otherImg" >
+        <img src="../../../assets/imgs/right-layer.png" alt="" class="" [ngClass]="i%2==0 ? 'right-layer ' : 'left-layer'"  >
+    
+        </div>
+    
+        <ng-template #otherImg>
+            <img src="../../../assets/imgs/left-layer.png" alt="" class="" [ngClass]="i%2==0 ? 'right-layer ' : 'left-layer'"  >
+        
+        </ng-template>
+    <div class="container   p-0">
+    <div class="heading">
+        <h2 class="text-center "  [ngClass] = "i %2 === 0  && i!==4 ? 'right-circle' : i===4 ? 'right-circle2' : 'left-circle' "    >{{item.heading}}</h2>
+    </div>
+
+        <div class="row  ">
+            <div class="content w-100  ">
+                
+                <div class="button w-100  bg-white  ">
+                    <a class="toggle" data-bs-toggle="collapse" href="#{{item.btnId}}" role="button" aria-expanded="false" aria-controls="collapseExample"  >
+                        <i class="fa-solid fa-angle-down"  id="first-btn"  ></i>
+                      </a>
+                   
+                    <div class="collapse w-100 " id="{{item.btnId}}">
+                        <div class="card card-body d-flex justify-content-center align-items-center w-100">
+                         <ul class="w-100 " *ngFor="let  content of item.content">
+                        
+                            <div class = " d-flex justify-content-between mb-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-solid fa-circle ms-2"></i>
+                                <li>{{content.li}}</li>
+                                </div>
+                                <button (click)="downloadPDF(content.pdf)"><img src="../../../assets/imgs/pdf-icon.png" alt=""></button>
+                            </div>
+
+                            
+                          
+                         </ul>
+                         <div class="line"></div>
+                          </div>
+                    </div>
+            </div>
+
+           
+            </div>
+        </div>
+    </div>
+</section>
+<app-about-diplomas-footer></app-about-diplomas-footer>

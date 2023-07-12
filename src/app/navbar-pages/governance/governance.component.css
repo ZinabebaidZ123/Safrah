@@ -1,0 +1,88 @@
+.button span{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    z-index: 999;
+   
+}
+.right-circle2 {
+    position:relative;
+    z-index: 666;
+}
+
+ .right-circle2::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0.5rem; 
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    z-index: -1;
+}
+@media (max-width:567px){
+    .right-circle2::after{
+        right: 3rem;
+    }
+}
+
+.Satisfaction-questionnaire   {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+}
+
+.card{
+    margin-top: 5rem !important;
+    border: none !important;
+}
+.card i{
+    color: var(--primary-color);
+}
+.card img{
+    width: 2rem;
+    
+}
+.card button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+section .content   ul{
+    padding: 0 1rem;
+}
+section .content   ul li{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.8;
+}
+section .li-content{
+    color:var(--primary-color);
+    width: 60%;
+}
+section .content ul li i{
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+@media(max-width:992px){
+    section .content   ul li{
+        font-size: 1.5rem;
+
+    }
+
+    section .content ul li i{
+        font-size: 1rem;
+        margin-left: 0.5rem;
+    }
+    .button span{
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+}
+
+
+

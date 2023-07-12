@@ -1,0 +1,427 @@
+<app-navbar></app-navbar>
+<app-banner></app-banner>
+
+
+
+<!-- general-charity---------------------------- -->
+<section class="general-charity   " *ngFor="let item of list ; let i = index"  >
+   
+    <div *ngIf="i %2==0 ; else otherImg" >
+    <img src="../../../assets/imgs/right-layer.png" alt="" class="" [ngClass]="i%2==0 ? 'right-layer ' : 'left-layer'"  >
+
+    </div>
+
+    <ng-template #otherImg>
+        <img src="../../../assets/imgs/left-layer.png" alt="" class="" [ngClass]="i%2==0 ? 'right-layer ' : 'left-layer'"  >
+    
+    </ng-template>
+    <div class="container   p-0"   >
+    <div class="heading">
+        <h2 class="text-center "  [ngClass] = "i %2 === 0  && i!==6 ? 'right-circle' : i===6 ? 'right-circle2' : 'left-circle' "    >{{item.heading}}</h2>
+    </div>
+
+        <div class="row  "   >
+        
+            <div class="content w-100  "  >
+               
+                <div class="button w-100  bg-white  " *ngIf = 'i!==1 ; else otherDiv' >
+                    <a class="toggle" data-bs-toggle="collapse" href="#{{i}}" role="button" aria-expanded="false" aria-controls="collapseExample"  >
+                        <i class="fa-solid fa-angle-down   "  id=""  ></i>
+                      </a>
+                   
+                    <div class="collapse w-100 " id="{{i}}"  >
+                        <div class="card card-body d-flex justify-content-center align-items-center w-100">
+                         <ul class="w-100 " *ngFor="let  content of item.content">
+                        
+                            <div class = " d-flex justify-content-between mb-3 li-container">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-solid fa-circle ms-2"></i>
+                                <li>{{content.li}}</li>
+                                </div>
+                                <button (click)="downloadPDF(content.pdf)"><img src="../../../assets/imgs/pdf-icon.png" alt=""></button>
+                            </div>
+
+                        
+                          
+                         </ul>
+
+                         <div class="line"></div>
+                         
+                          </div>
+                    </div>
+            </div>
+
+         
+        </div>
+
+  
+
+        <ng-template class="content w-100 " #otherDiv >
+         
+            
+            <div class="button w-100  bg-white  ">
+
+           
+                <a class="toggle" data-bs-toggle="collapse" href="#{{i}}" role="button" aria-expanded="false" aria-controls="collapseExample"  >
+                    <i class="fa-solid fa-angle-down"  id="first-btn"  ></i>
+                  </a>
+               <!-- </div> -->
+
+                <div class="collapse w-100 " id="{{i}}">
+                    <div class="card card-body d-flex justify-content-center align-items-center w-100">
+                     <ul class="w-100 ">
+                    
+                        <div class = " d-flex justify-content-between mb-3 li-container">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-circle ms-2"></i>
+                            <li>أعضاء مجلس الإدارة</li>
+                            </div>
+                            <button (click)="downloadPDF('https://drive.google.com/file/d/1lLEXD0qul8EOGgJ4GA3L4XqAlsyfFeqq/view')"><img src="../../../assets/imgs/pdf-icon.png" alt=""></button>
+                        </div>
+
+                        <div class = " d-flex justify-content-between mb-3 li-container">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-circle ms-2"></i>
+                            <li>  اختصاصات مجلس الإدارة</li>
+                            </div>
+                            <button (click)="downloadPDF('https://drive.google.com/file/d/1AHLC0LBPwMYYufZRGjeZ0FRMBmObTI0E/view')"><img src="../../../assets/imgs/pdf-icon.png" alt=""></button>
+                        </div>
+
+
+                        <div class = " d-flex justify-content-between mb-3 "  >
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-circle ms-2"></i>
+                            <li>محاضر اجتماعات مجلس الإدارة لعام 2021 م  </li>
+                            </div>
+                            <a class="" data-bs-toggle="collapse" href="#button1" role="button" aria-expanded="false" aria-controls="collapseExample"  >
+                                <i class="fa-solid fa-angle-down text-black"  id="first-btn"  ></i>
+                              </a>
+
+</div>
+                              <div class="collapse w-100 " id="button1">
+                                <div class=" d-flex justify-content-between align-items-center w-100">
+
+                                     <div class="li-content  d-flex justify-content-between "  >
+                                        <div class="right-content"  >
+                                            
+                                            <ul>
+                                                <div class = " d-flex align-items-center mb-3 li-container">
+                                                 
+                                                    
+                                                    <li>  محضر رقم 1   </li>
+                                               
+                                                    <button (click)="downloadPDF('https://drive.google.com/file/d/1iNBFe5DZV8BIqPsq9yqN5Pe-Zpw2WLam/view')"><img src="../../../assets/imgs/pdf-icon.png" alt="" class="me-3"></button>
+                                                </div>
+
+                                                <div class = " d-flex align-items-center mb-3 li-container">
+                                                 
+                                                    
+                                                    <li>  محضر رقم 3   </li>
+                                               
+                                                    <button (click)="downloadPDF('https://drive.google.com/file/d/1sgYQHSFvYqGrYdzuUjb5XbxELJou7H5B/view')"><img src="../../../assets/imgs/pdf-icon.png" alt=""  class="me-3"></button>
+                                                </div>
+
+                                                <div class = " d-flex align-items-center mb-3 li-container">
+                                                 
+                                                    
+                                                    <li>  محضر رقم 5   </li>
+                                               
+                                                    <button (click)="downloadPDF('https://drive.google.com/file/d/1sYVmsZb3FSp5Jyqs00A4yTTGsGRO_e7F/view')"><img src="../../../assets/imgs/pdf-icon.png" alt="" class="me-3"></button>
+                                                </div>
+
+                                             
+                                            </ul>
+                                        </div>
+
+                                        <div class="left-content">
+                                            <ul>
+                                                <div class = " d-flex align-items-center mb-3 li-container">
+                                                 
+                                                    
+                                                    <li>    محضر رقم 2</li>
+                                               
+                                                    <button (click)="downloadPDF('https://drive.google.com/file/d/1BHFa00i_CoQwbfFU67_FG2zLfUJpbFfp/view')"><img src="../../../assets/imgs/pdf-icon.png" alt="" class="me-3"></button>
+                                                </div>
+
+                                                <div class = " d-flex align-items-center mb-3 li-container">
+                                                 
+                                                    
+                                                    <li>    محضر رقم 4</li>
+                                               
+                                                    <button (click)="downloadPDF('https://drive.google.com/file/d/1-ECgB5egzJodFOCMgpXuKKDiZGG0IZiz/view')"><img src="../../../assets/imgs/pdf-icon.png" alt="" class="me-3"></button>
+                                                </div>
+                                            </ul>
+                                        </div>
+
+                                     </div>
+
+                                    </div></div>
+
+
+                                    <div class = " d-flex justify-content-between mb-3 "  >
+                                        <div class="d-flex align-items-center">
+                                            <i class="fa-solid fa-circle ms-2"></i>
+                                        <li> محاضر اجتماعات مجلس الإدارة لعام 2022 م </li>
+                                        </div>
+                                        <a class="" data-bs-toggle="collapse" href="#button2" role="button" aria-expanded="false" aria-controls="collapseExample"  >
+                                            <i class="fa-solid fa-angle-down text-black"  id="first-btn"  ></i>
+                                          </a>
+            
+                                     </div>
+
+                                          <div class="collapse w-100 " id="button2">
+                                            <div class=" d-flex justify-content-between align-items-center w-100">
+            
+                                                 <div class="li-content  d-flex justify-content-between "  >
+                                                    <div class="right-content"  >
+                                                        
+                                                        <ul>
+                                                            <div class = " d-flex align-items-center mb-3 li-container">
+                                                             
+                                                                
+                                                                <li>  محضر رقم 1   </li>
+                                                           
+                                                                <button (click)="downloadPDF('https://drive.google.com/file/d/1-Px4Yrz5Wto2Kn0KSIfRzglN404J9oVT/view')"><img src="../../../assets/imgs/pdf-icon.png" alt="" class="me-3"></button>
+                                                            </div>
+            
+                                                            <div class = " d-flex align-items-center mb-3 li-container">
+                                                             
+                                                                
+                                                                <li>  محضر رقم 3   </li>
+                                                           
+                                                                <button (click)="downloadPDF('https://drive.google.com/file/d/1eo7bGo6aJxiRuH3ncCPMMdO_NrHTOv-f/view')"><img src="../../../assets/imgs/pdf-icon.png" alt=""  class="me-3"></button>
+                                                            </div>
+            
+                                                            <div class = " d-flex align-items-center mb-3 li-container">
+                                                             
+                                                                
+                                                                <li>  محضر رقم 5   </li>
+                                                           
+                                                                <button (click)="downloadPDF('https://drive.google.com/file/d/1ASR0jx4KUh0joS2w3_MHRrXSfmv1TmNh/view')"><img src="../../../assets/imgs/pdf-icon.png" alt="" class="me-3"></button>
+                                                            </div>
+
+                                                            <div class = " d-flex align-items-center mb-3 li-container">
+                                                             
+                                                                
+                                                                <li>  محضر رقم 7   </li>
+                                                           
+                                                                <button (click)="downloadPDF('https://drive.google.com/file/d/1oKc64r4ivvhL7saItiPrBIq-LNwQ0oZk/view')"><img src="../../../assets/imgs/pdf-icon.png" alt="" class="me-3"></button>
+                                                            </div>
+
+                                                            <div class = " d-flex align-items-center mb-3 li-container">
+                                                             
+                                                                
+                                                                <li>  محضر رقم 9   </li>
+                                                           
+                                                                <button (click)="downloadPDF('https://drive.google.com/file/d/1Sx5hJBq92RGUbxqLlHflNUqwmYHeAHzc/view')"><img src="../../../assets/imgs/pdf-icon.png" alt="" class="me-3"></button>
+                                                            </div>
+                                                        </ul>
+                                                    </div>
+            
+                                                    <div class="left-content">
+                                                        <ul>
+                                                            <div class = " d-flex align-items-center mb-3 li-container">
+                                                             
+                                                                
+                                                                <li>    محضر رقم 2</li>
+                                                           
+                                                                <button (click)="downloadPDF('https://drive.google.com/file/d/16gwdoPEjUQc2PnDKEKZikkTemK1te4XX/view')"><img src="../../../assets/imgs/pdf-icon.png" alt="" class="me-3"></button>
+                                                            </div>
+            
+                                                            <div class = " d-flex align-items-center mb-3 li-container">
+                                                             
+                                                                
+                                                                <li>    محضر رقم 4</li>
+                                                           
+                                                                <button (click)="downloadPDF('https://drive.google.com/file/d/14PXDP2asaDZBsMvq5aKej3XS0dHfaBLN/view')"><img src="../../../assets/imgs/pdf-icon.png" alt="" class="me-3"></button>
+                                                            </div>
+
+
+                                                            <div class = " d-flex align-items-center mb-3 li-container">
+                                                             
+                                                                
+                                                                <li>    محضر رقم 6</li>
+                                                           
+                                                                <button (click)="downloadPDF('https://drive.google.com/file/d/1B-_NWSlRSV3weFyiCzFpWj_Hh8ldWnHh/view')"><img src="../../../assets/imgs/pdf-icon.png" alt="" class="me-3"></button>
+                                                            </div>
+
+                                                            <div class = " d-flex align-items-center mb-3 li-container">
+                                                             
+                                                                
+                                                                <li>    محضر رقم 8</li>
+                                                           
+                                                                <button (click)="downloadPDF('https://drive.google.com/file/d/17EDpjRe-2W_ObpG6SB2jJ4ge4_edQNws/view')"><img src="../../../assets/imgs/pdf-icon.png" alt="" class="me-3"></button>
+                                                            </div>
+
+                                                            <div class = " d-flex align-items-center mb-3 li-container">
+                                                             
+                                                                
+                                                                <li>    محضر رقم 10</li>
+                                                           
+                                                                <button (click)="downloadPDF('https://drive.google.com/file/d/1QKxmFM-0bPFJajjlia9VPlNSP2WMJKM8/view')"><img src="../../../assets/imgs/pdf-icon.png" alt="" class="me-3"></button>
+                                                            </div>
+
+                                                        </ul>
+                                                    </div>
+            
+                                                 </div>
+            
+                                                </div></div>
+
+                                                <div class = " d-flex justify-content-between mb-3 align-items-center"  >
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa-solid fa-circle ms-2"></i>
+                                                    <li> محاضر اجتماعات مجلس الإدارة لعام 2023 م </li>
+                                                    </div>
+                                                    <a class="" data-bs-toggle="collapse" href="#button3" role="button" aria-expanded="false" aria-controls="collapseExample"  >
+                                                        <i class="fa-solid fa-angle-down text-black"  id="first-btn"  ></i>
+                                                      </a>
+                        
+                                                 </div>
+
+                                                 <div class="collapse w-100 " id="button3">
+                                                    <div class=" d-flex justify-content-between align-items-center w-100">
+                    
+                                                         <div class="li-content  d-flex justify-content-between "  >
+                                                            <!-- <div class="right-content"  >
+                                                                
+                                                                <ul>
+                                                                    <div class = " d-flex align-items-center mb-3 li-container">
+                                                                     
+                                                                        
+                                                                        <li>  محضر رقم 1   </li>
+                                                                   
+                                                                        <button (click)="downloadPDF(item.pdfPath)"><img src="../../../assets/imgs/pdf-icon.png" alt="" class="me-3"></button>
+                                                                    </div>
+                    
+                                                                    <div class = " d-flex align-items-center mb-3 li-container">
+                                                                     
+                                                                        
+                                                                        <li>  محضر رقم 3   </li>
+                                                                   
+                                                                        <button (click)="downloadPDF(item.pdfPath)"><img src="../../../assets/imgs/pdf-icon.png" alt=""  class="me-3"></button>
+                                                                    </div>
+                    
+                                                                    <div class = " d-flex align-items-center mb-3 li-container">
+                                                                     
+                                                                        
+                                                                        <li>  محضر رقم 5   </li>
+                                                                   
+                                                                        <button (click)="downloadPDF(item.pdfPath)"><img src="../../../assets/imgs/pdf-icon.png" alt="" class="me-3"></button>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                    
+                                                            <div class="left-content">
+                                                                <ul>
+                                                                    <div class = " d-flex align-items-center mb-3 li-container">
+                                                                     
+                                                                        
+                                                                        <li>    محضر رقم 2</li>
+                                                                   
+                                                                        <button (click)="downloadPDF(item.pdfPath)"><img src="../../../assets/imgs/pdf-icon.png" alt="" class="me-3"></button>
+                                                                    </div>
+                    
+                                                                    <div class = " d-flex align-items-center mb-3 li-container">
+                                                                     
+                                                                        
+                                                                        <li>    محضر رقم 4</li>
+                                                                   
+                                                                        <button (click)="downloadPDF(item.pdfPath)"><img src="../../../assets/imgs/pdf-icon.png" alt="" class="me-3"></button>
+                                                                    </div>
+                                                                </ul>
+                                                            </div> -->
+                    
+                                                         </div>
+                    
+                                                        </div></div>
+ 
+                     </ul>
+                     <div class="line"></div>
+                      </div>
+                </div>
+        </div>
+
+
+
+
+       
+    </ng-template>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="general-charity   " >
+  
+
+    <div>
+        <img src="../../../assets/imgs/right-layer.png" alt="" class="centered-layer" >
+    
+    </div>
+    <div class="container   p-0"  >
+    <div class="heading">
+        <h2 class="text-center " class = "right-circle" data-aos-easing="linear"
+        data-aos-duration="2000"   data-aos-delay="300" data-aos="zoom-in">>استبانات قياسات الرضا</h2>
+    </div>
+
+        <div class="row  ">
+       
+            <div class="content w-100   " *ngFor="let item of formList ; let i = index">
+              
+                
+                <div class="button w-100  bg-white  Satisfaction-questionnaire     ">
+    
+                    <div class="d-flex justify-content-between align-items-center">
+    
+                        <span>{{item.heading}}</span>
+                    <a class="toggle" data-bs-toggle="collapse" href="#{{item.btnId}}" role="button" aria-expanded="false" aria-controls="collapseExample"  >
+                        <i class="fa-solid fa-angle-down"  id="first-btn"  ></i>
+                      </a>
+                   </div>
+    
+                    <div class="collapse w-100 " id="{{item.btnId}}">
+                        
+                        <div class="card card-body  w-100">
+                         <ul>
+                            <div class = " d-flex justify-content-between mb-3 w-100">
+                              <li>{{item.heading}}</li>
+                                <button (click)="downloadPDF(item.pdfPath)"><img src="../../../assets/imgs/form-icon.png" alt=""></button>
+                            </div>
+                            </ul>
+                          
+                         <ul class="w-100 " *ngFor="let  content of item.content">
+                        
+                            <div class = " d-flex justify-content-between mb-3 li-container">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-solid fa-circle ms-2"></i>
+                                <li>{{content.li}}</li>
+                                </div>
+                                <button (click)="downloadPDF(content.pdf)"><img src="../../../assets/imgs/pdf-icon.png" alt=""></button>
+                            </div>
+    
+                          
+                          
+                         </ul>
+
+                         <div class="line"></div>
+                         
+                          </div>
+                    </div>
+            </div>
+    
+           
+        </div>
+            </div>
+        
+        </div></section>
+
+
+
+<app-about-diplomas-footer></app-about-diplomas-footer>
+
+
+
+
+

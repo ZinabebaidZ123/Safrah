@@ -1,0 +1,34 @@
+<app-navbar></app-navbar>
+<app-banner></app-banner>
+
+<section class="newspapper">
+    <img src="../../../assets/imgs/right-layer.png" alt="" class="right-layer">
+    <div class="container">
+        <div class="heading">
+            <h2 class="text-center  right-circle" data-aos-easing="linear"
+            data-aos-duration="1400"   data-aos-delay="400" data-aos="fade-left">
+                أخبارنا فى الصحف
+            </h2>
+            </div>
+
+             <div class="row justify-content-center align-items-center "  data-aos-easing="linear"
+             data-aos-duration="1400"   data-aos-delay="600" data-aos="zoom-in">
+                <!-- <div class="col-lg-8"> -->
+               <ul *ngFor = "let news of newspapperList" class="">
+                <div class = " d-flex justify-content-between mb-3 bg-white content">
+                    <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-circle ms-2"></i>
+                    <li><a href="" class="link">{{news.heading}}</a></li>
+                    </div>
+                    <button><a href="{{news.link}}"><img src="../../../assets/imgs/link.png" alt=""></a></button>
+                </div>
+
+
+               </ul>
+            </div></div>
+        <!-- </div> -->
+        <div>
+        <img src="../../../assets/imgs/left-layer.png" alt="" class="left-layer">
+        </div>
+</section>
+<app-about-diplomas-footer></app-about-diplomas-footer>

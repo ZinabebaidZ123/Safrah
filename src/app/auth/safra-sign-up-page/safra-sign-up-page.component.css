@@ -1,0 +1,148 @@
+.banner{
+    background-image: url('../../../assets/imgs/Background.png');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: #fff;
+
+}
+.banner h1{
+    margin-top: 5.25rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.8;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 4rem;
+}
+.signUp{
+    
+position: relative;
+    background-color: #ccc;
+}
+.signUp .img-layer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40%; 
+     /* z-index: -1; */
+    width: 40%;
+}
+.signUp .col-lg-8{
+    background-color: #fff;
+    position: relative;
+    bottom: 11rem;
+    padding: 0 !important;
+    transition: 1s all;
+    cursor: pointer;
+    z-index: 999900;
+}
+.signUp .col-lg-8:hover{
+    transform: translateY(-0.5rem);
+}
+.signUp .card-header{
+    text-align: center;
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 0.75rem;
+}
+.signUp .card-header h4{
+    font-weight: 700;
+    line-height: 1.7;
+    font-size: 1.125rem;
+}
+.signUp h5{
+    font-weight: 700;
+    line-height: 1.7;
+}
+.signUp form{
+    padding: 1rem;
+}
+
+.signUp .info-box{
+    background-color: var(--primary-color);
+    margin-bottom: 1.75rem;
+ 
+}
+.signUp .info-box .button{
+       padding: 1.25rem;
+}
+.signUp form .inputs-box{
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+  
+}
+.signUp .info-box  i{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.signUp .form .inputs{
+   padding: 2.875rem 1.688rem;
+   background-color: var(--primary-color);
+}
+.signUp .form  label{
+    margin-bottom: 0.35rem;
+    line-height: 1.6;
+}
+.signUp .form .inputs  .first-row{
+    margin-bottom: 2.563rem;
+
+}
+.signUp .form  input{
+    border: none;
+    outline: none;
+    padding: 0.25rem !important;
+    margin-bottom: 1.24rem;
+    
+}
+.signUp .form  .hidden{
+    visibility: hidden;
+}
+.signUp .form  .hr{
+    padding: 1rem;
+}
+.signUp .form .line{
+    width: 10%;
+    height: 3px;
+    background-color: #fff;
+    margin: auto;
+}
+.signUp .form .inputs select {
+    border: none;
+    outline: none;
+    padding:0.75rem  !important;
+    width: 100% !important;
+  
+}
+.signUp .form .inputs select option{
+    margin-left: 2rem;
+}
+.signUp .form .check{
+    margin-top: 2rem;
+}
+.signUp .form .check p{
+    margin: 1rem;
+}
+.signUp .form button{
+    margin-top: 1.063rem;
+    margin-bottom: 2.563rem;
+    border: none;
+    outline: none;
+    padding: 1.063rem;
+    background-color: var(--primary-color);
+  
+}
+.signUp .form button a{
+    color: #fff;
+    font-weight: 700;
+}
+.signUp .form i{
+    cursor: pointer;
+}
+@media (max-width: 992px){
+    .signUp .row{
+        padding: 0 2rem ;
+    }
+}

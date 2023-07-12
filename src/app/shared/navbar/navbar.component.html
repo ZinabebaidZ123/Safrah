@@ -1,0 +1,171 @@
+
+
+
+<!-- navbar section---------------------------------------------------- -->
+
+<header class="header " >
+
+
+  <nav class="navbar navbar-expand-lg bg-white  shadow-3"  [class.header_change]="header_variable">
+    <div class="container-fluid">
+     
+      <a class="navbar-brand"  class="" routerLink="/landingPage">
+         <img class="" src="../../../assets/imgs/logo.png" alt=""class="nav-logo"></a>
+
+         <div class = "icons ">
+       <div class="d-flex p-2  icon flex-column justify-content-center align-items-center ">
+        <a >
+      <i class="fa-solid fa-mosque "></i>
+    </a>
+    <h6>مواقيت الصلاة</h6>
+       </div>
+      
+       <div class="d-flex p-2   icon flex-column   justify-content-center align-items-center ">
+        <a>
+          <i class="fa-solid fa-envelope  "></i>
+        </a>
+        <h6>اتصل بنا</h6>
+       </div>
+
+       <div class="d-flex p-2 flex-column icon  justify-content-center align-items-center ">
+        <a >
+          <i class="fa-solid fa-store  "></i>
+        </a>
+        <h6>المتجر</h6>
+       </div>
+
+        
+        
+      
+      </div>
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" [ngClass]="{'active': isActive('/landingPage')}" routerLink="/landingPage">الرئيسية</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{'active': isActive('/about-charity-page')}"  routerLink ="/about-charity-page"> عن الجمعية </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{'active': isActive('/governance-page')}"    routerLink="/governance-page">الحوكمه</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               الخدمات
+            </a>
+            <ul class="dropdown-menu  " aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item"  [ngClass]="{'active-menue-link': isActive('/logIn-page')}"    routerLink="/logIn-page">  تسجيل الدخول</a></li>
+         
+            
+            </ul>
+          </li> 
+        
+          <li class="nav-item">
+            <a class="nav-link"  [ngClass]="{'active-menue-link': isActive('/reports-page')}"  routerLink="/reports-page" >التقارير</a>
+          </li>
+
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              المركز الإعلامي
+            </a>
+            <ul class="dropdown-menu  " aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item"   [ngClass]="{'active-menue-link': isActive('/news-page')}" routerLink="/news-page"> أخبار الجمعيه</a></li>
+              <li><a class="dropdown-item"  [ngClass]="{'active-menue-link': isActive('/img-gallery-page')}" routerLink="/img-gallery-page"> معرض الصور </a></li>
+              <li><a class="dropdown-item" [ngClass]="{'active-menue-link': isActive('/video-gallery-page')}" routerLink="/video-gallery-page">  معرض المرئيات </a></li>
+         
+              <li><a class="dropdown-item"  [ngClass]="{'active-menue-link': isActive('/newspapper-page')}" routerLink="/newspapper-page"> أخبارنا فى الصحف  </a></li>
+            
+            </ul>
+          </li> 
+          </ul>
+          
+
+    
+        
+       
+        <div class=" d-flex justify-content-end   lang-settings  ">
+       
+         <ul>
+            <li class="nav-item dropdown mt-2 ">
+              <a class="nav-link dropdown-toggle  "  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="ms-3"> العربية </span>
+                   <img src="../../../assets/imgs/saudi-flag.png" alt="">
+              </a>
+              <ul class="dropdown-menu  dropdown-menu-left ">
+                <li class="d-flex"><a class="dropdown-item d-flex" >    
+                  <span class="ms-3">الإنجليزية</span> <img src="../../../assets/imgs/america-flag.png" alt=""> 
+               
+                  </a></li>
+           
+              </ul>
+            </li> </ul>
+       
+            </div>
+
+                 
+      <div class="visitors d-md-none d-flex justify-content-center align-items-center flex-column mt-2">
+        <h5>عدد الزوار</h5>
+        <h4>{{ visitorsCount}}</h4>
+   </div>
+
+            <button class=" nav-btn me-4 desktop-btn">المنصة</button>
+            <div class="other-links d-flex w-75 m-auto justify-content-between align-items-center d-md-none">
+           
+
+              <div class="sugg-comp text-center">
+                <a routerLink="/suggestion&complaints-page">
+                  <i class="fa-sharp fa-solid fa-sheet-plastic    primary-color"></i>
+                </a>
+                <h6 class="">المقترحات <br> والشكاوى</h6>
+              </div>
+
+              <div class="d-flex ">
+                <div class="employment ms-4 text-center">
+                  <a routerLink="/employment-page">
+                  <i class="fa-solid fa-briefcase   primary-color"></i>
+                  </a>
+                  <h6 class="">التوظيف</h6>
+                </div>
+          
+             
+              </div>
+              <button class=" nav-btn me-4 ">المنصة</button>
+            </div>
+        
+       
+        <div class="social-links  d-flex  ">
+          
+          <div>
+          <a >
+     
+        <i class="fa-brands fa-twitter "></i>
+      </a>
+  </div>
+  <div>
+      <a>
+   
+    <i class="fa-brands fa-instagram  "></i>
+  </a>
+  </div>
+  <div>
+        <a>
+      
+        <i class="fa-brands fa-snapchat  "></i>
+      </a>
+      </div>
+      
+         </div>
+    </div></div>
+  </nav>  
+
+</header>
+
+
+
+
+

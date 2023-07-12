@@ -1,0 +1,28 @@
+
+  .heading-wrapper {
+    font-weight:800;
+  }
+ 
+  .right-layer{
+   width: 25%;
+   bottom: 15rem;
+   opacity: 0.6;
+  
+  }
+  .news
+  .news-heading{
+    width: 80%;
+  }
+  .news-heading h2{
+    margin-bottom: 0;
+  }
+  .news-heading p{
+    font-weight: 400;
+    margin-bottom: 3rem;
+  }
+  .about-news{
+    margin-top: 4rem;
+  }
+  .about-news p{
+    font-weight: 400;
+  }

@@ -1,0 +1,22 @@
+/*  */
+section form  label {
+   font-size: 1.25rem;
+   font-weight: 700;
+   line-height: 1.7;
+   margin-bottom: 0.5rem;
+}
+section form input {
+    border: none;
+    outline: none;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #fff !important;
+}
+section form button {
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    padding: 1rem 3rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+}

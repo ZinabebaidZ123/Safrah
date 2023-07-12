@@ -1,0 +1,110 @@
+body{
+    background-color: #7D7D7D;
+}
+.banner{
+    background-image: url('../../../assets/imgs/Background.png');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: #fff;
+
+}
+.banner h1{
+    margin-top: 5.25rem;
+}
+/* start about-diploma-section------------------------------------------- */
+ .about-diplomas{
+    position: relative;
+    background-color: var(--body-color);
+    z-index: 9999000;
+} 
+.about-diplomas .img-layer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40%;
+}
+ .about-diplomas .col-lg-4{
+   padding: 0.75rem !important;
+   position: relative;
+   bottom: 11rem;
+   margin-bottom: 2.5rem;
+   transition: 1s all;
+    
+}
+.about-diplomas .col-lg-4:hover{
+    transform: translateY(-0.5rem);
+    cursor: pointer;
+    
+}
+.about-diplomas .card-content{
+    background-color: #fff;
+}
+.about-diplomas .card-content:hover{
+    background-color: #f8f2f2;
+}
+.about-diplomas .card-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #7D7D7D;
+    padding: 5rem;
+}
+.about-diplomas .card-img img{
+    width: 1.813rem;
+}
+.about-diplomas .card-header{
+    padding: 0.688rem;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+.about-diplomas .card-header h4{
+    font-weight: 700;
+    font-size: 1.45rem;
+    color: #fff;
+
+}
+.about-diplomas .card-body{
+    padding: 1.25rem 3rem;
+}
+.about-diplomas .card-body p{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+.about-diplomas .card-body button{
+    margin:1.188rem;
+    padding: 1.188rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+}
+/* start layer section--------------------------------------------------------- */
+.layer{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 40%;
+    margin-top: 0;
+    /* background-color:var(--body-color); */
+  
+}
+.layer img{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 50% !important;
+      /* z-index: -1; */
+}
+@media (max-width:992px){
+    .about-diplomas .col-lg-4{
+        padding:0 6rem !important;
+      
+        
+    }
+    .about-diplomas .img-layer{
+        width: 100%;
+    }
+}

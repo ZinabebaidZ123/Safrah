@@ -1,0 +1,82 @@
+h2{
+    margin-bottom: 3rem;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+}
+.right-circle{
+    position:relative;
+    z-index: 666;
+}
+ .right-circle::after{
+    content: "";
+    position: absolute;
+    right: 0; 
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    z-index: -1;
+} 
+section{
+    position: relative;
+    z-index: 777;
+
+}
+section .right-layer{
+    position: absolute;
+    right: 0;
+    top:0;
+    width: 20%;
+    z-index: -1;
+}
+
+.sugg-comp .input{
+    margin-bottom: 1rem;
+}
+.sugg-comp .radio-inputs{
+    padding: 1rem;
+}
+.sugg-comp .radio-inputs label{
+    margin-right: 0.5rem;
+}
+
+.sugg-comp textarea{
+    border: none;
+    outline: none;
+}
+.sugg-comp form  label {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+ }
+.sugg-comp input{
+    border: none;
+    outline: none;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #fff !important;
+}
+.sugg-comp button{
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    width: 18.75rem;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+.sugg-comp .about-complaint-pdf{
+    padding-top: 5rem;
+}
+@media (min-width:350px) and (max-width:492px){
+    .right-circle::after{
+       
+        right: 4rem; 
+        bottom: 4.5rem;
+       
+    } 
+}
+

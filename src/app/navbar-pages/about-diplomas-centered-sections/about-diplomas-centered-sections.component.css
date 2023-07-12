@@ -1,0 +1,107 @@
+/* start charity-info section */
+h2 span{
+    position: relative;
+    z-index: 66;
+    display: inline-block;
+    
+}
+h2 span::before{
+    content: "";
+    position: absolute;
+    bottom: 1.7rem;
+    width: 100%;
+    height: 1rem;
+    z-index: -1;
+    background-color: var(--primary-color);
+}
+.charity-info {
+    font-size: 1.25rem;
+    font-weight: 700;
+ }
+
+ .right-content{
+    background-color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 700;
+    width: 40%;
+    padding: 1.688rem;
+    text-align: center;
+}
+ .left-content-box{
+    width: 58%;
+}
+ .left-content{
+    width: 58%;
+    background-color: #fff;
+    text-align: center;
+    padding:1.688rem;
+    
+}
+ .left-content-box .left-content{
+    width: 100%;
+}
+
+/* start ch-vision-section-------------- */
+.ch-vision{
+    position: relative;
+    z-index: 99;
+   
+}
+.ch-file img{
+    width: 4.563rem;
+    height: 5.625rem;
+}
+.ch-vision .right-content h4 , .ch-vision  .left-content p{
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.ch-vision .primary-color{
+    background-color: var(--primary-color);
+}
+.ch-vision .vision-layer{
+    position: absolute;
+    right: 0;
+    top:14%;
+    width: 50%;
+    z-index: -1;
+    opacity: 0.7;
+}
+@media(max-width:992px){
+    .ch-vision .vision-layer{
+        top: 20%;
+    }
+}
+.ch-vision .vision-cont{
+    padding-bottom: 4rem;
+}
+.ch-vision .vision-property{
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+}
+.ch-vision .vision-content  h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.ch-vision .vision-content  p{
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 4.25rem;
+}
+.ch-vision .vision-property img{
+    width:5rem ;
+    height: 4.384rem;
+    text-align: center;
+}
+
+@media (max-width:992px){
+    .ch-vision .vision-property img{
+        width:4rem ;
+       
+    }
+
+    .ch-vision .vision-property{
+        padding: 0.5rem;
+        background-color: var(--primary-color);
+    }
+}

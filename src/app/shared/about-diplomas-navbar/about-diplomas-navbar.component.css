@@ -1,0 +1,24 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999999999;
+    background-color: #fff;
+}
+.navbar a{
+    font-size: 2rem !important;
+}
+.navbar i{
+    color: var(--primary-color);
+    margin-left: 1.5rem;
+}
+@media (max-width:992px){
+    .navbar .container{
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .navbar ul {
+        display: none !important;
+    }
+}

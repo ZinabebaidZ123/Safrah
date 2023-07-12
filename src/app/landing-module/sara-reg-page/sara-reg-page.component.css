@@ -1,0 +1,88 @@
+body{
+    background-color: red !important;
+}
+
+.banner{
+    background-image: url('../../../assets/imgs/Background.png');
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: #fff;
+
+}
+.banner h1{
+    margin-top: 4.25rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.8;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 4rem;
+}
+
+.about-diplomas{
+    position: relative;
+    bottom: 10rem;
+    z-index: 9999;
+} 
+.about-diplomas .img-layer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40%;
+    z-index: -1;
+}
+ .about-diplomas .col-lg-4{
+   padding: 1.6rem !important;
+   transition: 1s all;
+  
+}
+.about-diplomas .col-lg-4:hover{
+    transform:translateY(-0.5rem);
+    cursor: pointer;
+}
+.about-diplomas .card-content{
+    background-color: #fff;
+    min-height: 20rem;
+}
+.about-diplomas .card-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #7D7D7D;
+    padding: 5rem;
+}
+.about-diplomas .card-img img{
+    width: 1.813rem;
+}
+.about-diplomas .card-header{
+    padding: 0.688rem;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+.about-diplomas .card-header h4{
+    font-weight: 700;
+    font-size: 1.45rem;
+    color: #fff;
+
+}
+.about-diplomas .card-body{
+    padding: 1.25rem 3rem;
+    height: 50% !important;
+}
+.about-diplomas .card-body p{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.8;
+  
+   
+}
+.about-diplomas .card-body button{
+    margin:1.188rem;
+    padding: 0.75rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+}

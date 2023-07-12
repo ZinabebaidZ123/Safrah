@@ -1,0 +1,123 @@
+
+
+
+
+/*start of slider section**************************************************/
+.slider{
+    position: relative;
+}
+.slider button {
+    background-color: var(--primary-color);
+    font-size: 1.75rem;
+    padding: 0.75rem 1rem;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 50%;
+    border: none;
+}
+.slider img{
+    position: relative;
+}
+.slider .img-content{
+    position:  absolute;
+ 
+    bottom: 30%;
+   
+    padding-right: 3rem;
+}
+
+/* @media (max-width:767px){ */
+    .slider .img-content p span{
+        position: relative;
+        z-index: 777;
+        display: inline-block;
+    }
+    .slider .img-content p span::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        background-color: var(--primary-color);
+        bottom: 0.75rem;
+        height: 1rem;
+        z-index: -1;
+    }
+/* } */
+.slider .slider-content p{
+    color: #fff;
+    font-weight: bold;
+    /* text-shadow: .25rem .25rem .25rem var(--primary-color); */
+  
+    font-size: 2.25rem;
+}
+.slider .slider-layer{
+    position: absolute;
+    /* left: 50%; */
+    right: 0;
+    bottom: 30%;
+    width: 40%;
+    /* top: 0; */
+    z-index: -1;
+}
+
+.slider-content{
+    position: relative;
+    padding-bottom: 5rem;
+}
+.slider-content .next{
+    position: absolute;
+    right: 7%;
+    bottom: 50%;
+}
+.slider-content .prev{
+    position: absolute;
+    left:7%;
+    bottom: 50%;
+}
+/* media query for slider section */
+@media (max-width:567px){
+    .slider .slide-content{
+        top: 40%;
+        line-height: 1.5;
+        font-size:1.9rem ;
+        position: absolute;
+
+    }
+}
+@media (min-width:567px) and (max-width:768px){
+    .slider .slide-content{
+        top: 45%;
+        line-height: 1.5;
+        font-size:2rem ;
+        position: absolute;
+
+    }}
+    @media (min-width:768px) and (max-width:1200px){
+        .slider .slide-content{
+            top: 65%;
+            line-height: 1.5;
+            font-size:2rem ;
+            position: absolute;
+        }
+}
+@media(max-width:992px){
+    .slider .slider-layer{
+        display: none;
+     }
+    .slider-content img{
+        width: 100%;
+    }
+    .slider-card{
+        width: 100% !important;
+    }
+    .slider-content .next{
+        position: absolute;
+        right: 35%;
+        bottom: 0%;
+    }
+    .slider-content .prev{
+        position: absolute;
+        left: 35%;
+        bottom: 0%;
+    }
+}
+

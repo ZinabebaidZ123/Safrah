@@ -1,0 +1,92 @@
+<app-navbar></app-navbar>
+<app-banner></app-banner>
+
+
+ <section class="news-details">
+    <div>
+        <img src="../../../assets/imgs/right-layer.png" alt="" class="right-layer">
+    </div>
+   
+    <div class="container">
+        <div class="news-content mt-5">
+         <div class="news-date ">
+          <h6 class="heading-wrapper "> 15 يناير 2022 </h6>
+         </div>
+     
+          <div class="news-heading">
+          <h2>احتفاء جمعيّة الدّراسات القرآنية بالأداء المتميز في أعمال الحوكمة</h2>
+
+          <p>الشراكة المجتمعية جمعية الدراسات القرآنية بمكة مع مشروع تعظيم البلد الحرام</p>
+          </div>
+
+          <div class="row">
+            <img src="../../../assets/imgs/new-image.png" alt="" class="w-100">
+          </div>
+
+          <div class="about-news">
+            <p>عقدت رئيسة جمعية الدّراسات القرآنية الدكتورة فاطمة بنت رمضان بن حسين، اجتماعًا مع مديرة القسم النسائي "هاجر" لمشروع تعظيم البلد الحرام سعادة د. سعاد بنت صالح بابقي بهدف تعزيز دور الشراكة المجتمعية في إظهار قيمة المكان (مكة المكرمة) وتعزيز قيم تعظيم البلد الحرام، وذلك يوم الاثنين التاسع من شهر ذي القعدة لعام 1444هـ.
+
+                </p>
+                <p>
+                إن جمعية الدّراسات القرآنية بمكّة المكرمة (سَفَرَة) تسعى إلى تفعيل دور هذه الشراكة مع مشروع تعظيم البلد الحرام بالمشاركة في عدد من البرامج التثقيفية واستثمار مهارات أطراف الشراكة وإمكانياتهم لتحقيق تعزيز قيم تعظيم البلد الحرام.
+                نسأل الله تعالى أن يحفظ ديننا وبلادنا وأن يوفق ويسدد خادم الحرمين الشريفين الملك سلمان بن عبد العزيز، وسمو ولي العهد صاحب السمو الملكي الأمير محمد بن سلمان بن عبدالعزيز، و أن يبارك المسير والخطى إنه عليٌّ قدير.</p>
+          </div>
+       </div>
+  </div>
+</section>
+
+
+<section class="news"  >
+  
+  <div class="container">
+      <div class="row justify-content-between align-items-center" data-aos="fade-down" >
+        
+        <div class="col-lg-4 col-md-6" *ngFor="let new of newsList">
+          <!-- <a routerLink="/news-details-page"> -->
+
+          <div class="news-card">
+            
+            <div *ngIf ="new.imgSrc.includes('classera') ; else otherImg ">
+            <div class="clasera-logo w-100  img">
+              <a routerLink="/news-details-page">
+              <img [src]="new.imgSrc " alt="">
+              </a>
+            </div>
+</div>
+<ng-template #otherImg>
+            <div class="img">
+              <a routerLink="/news-details-page">
+
+                <img
+                  [src]="new.imgSrc"
+                  alt=""
+                  class="w-100"
+                />
+                </a>
+                </div></ng-template>
+            
+            <div class="card-content">
+              <div class="box">
+                <p>
+                  {{new.content}}
+                </p>
+              </div>
+            
+              <div class="card-date">
+              <h6 class="">
+                15 <br/>
+                يناير
+              </h6></div>
+            </div>
+            
+          </div>
+        <!-- </a> -->
+        </div>
+        
+        <div class="know-more d-flex justify-content-center">
+            <button (click) ="seeMore()">استكشف أكثر</button>
+           </div>
+        </div>
+        </div>
+</section>
+<app-about-diplomas-footer></app-about-diplomas-footer>

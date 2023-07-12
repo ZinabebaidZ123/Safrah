@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+<app-banner></app-banner>
+
+
+<section class="gallery ">
+    <div class="container">
+        <div class="heading">
+            <h2 class="text-center" data-aos-easing="linear"
+            data-aos-duration="1400"   data-aos-delay="400" data-aos="fade-right">معرض الصور</h2>
+        </div>
+
+        <div class="row"  data-aos-easing="linear"
+        data-aos-duration="1400"   data-aos-delay="600" data-aos="zoom-in">
+            <div class="col-lg-4 mb-3" *ngFor = "let img of imgList ">
+                <div class="img-card">
+                    <img [src]="img" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-about-diplomas-footer></app-about-diplomas-footer>

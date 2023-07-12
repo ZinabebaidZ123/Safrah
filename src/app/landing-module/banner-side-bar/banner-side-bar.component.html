@@ -1,0 +1,84 @@
+<div class="banner-side-bar">
+    <div
+      class="side-bar-content h-100 d-flex flex-column justify-content-between align-items-center"
+    >
+      <div class="logo">
+        <a routerLink="">
+          <img src="../../assets/imgs/logo.png" alt="" />
+     
+        </a>
+      </div>
+
+
+      <div class="visitors ">
+           <h5>عدد الزوار</h5>
+           <h4>{{visitorsCount}}</h4>
+      </div>
+  
+      <div class="center-info d-flex flex-column">
+        <a 
+          >
+    
+
+  
+        <i class="fa-solid fa-mosque icon " routerLink="/pray-times"></i>
+      </a>
+  
+      <h6>مواقيت الصلاة</h6>
+        <a 
+          >
+      
+        <i class="fa-solid fa-envelope  icon"></i>
+      </a>
+
+
+  
+    
+      <h6>اتصل بنا</h6>
+        <a 
+          >
+     
+  
+        <i class="fa-solid fa-store  icon"></i>
+      
+      </a>
+      <h6>المتجر</h6>
+      </div>
+
+      <div class="employment">
+        <a routerLink="/employment-page">
+        <i class="fa-solid fa-briefcase   primary-color"></i>
+        </a>
+        <h6>التوظيف</h6>
+      </div>
+
+      <div class="sugg-comp">
+        <a routerLink="/suggestion&complaints-page">
+          <i class="fa-sharp fa-solid fa-sheet-plastic    primary-color"></i>
+        </a>
+        <h6>المقترحات والشكاوى</h6>
+      </div>
+  
+      <div class="social-contact d-flex flex-column">
+        <a href=""
+          >
+     
+        <i class="fa-brands fa-twitter icon"></i>
+      </a>
+  
+      <a >
+   
+    <i class="fa-brands fa-instagram  icon"></i>
+  </a>
+        <a >
+      
+        <i class="fa-brands fa-snapchat  icon"></i>
+      </a>
+      </div>
+    </div></div>
+
+    <div *ngIf="showPrayerTime">
+      <!-- Replace 'YOUR_EMBED_URL' with the actual URL for the prayer time iframe -->
+      <iframe [src]="prayerTimeUrl" class="prayer-time"  height="225" frameborder="0" width="226"
+      scrolling="off"></iframe>
+    </div> 

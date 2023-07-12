@@ -1,0 +1,71 @@
+ .banner-side-bar{
+    background-color: #fff;
+    color:var(--alt-color);
+    text-align: center;
+    padding: 1rem ;
+
+}
+
+/* .banner-side-bar .prayer-time{
+    position: relative;
+    left: 70%;
+    top: 50%;
+} */
+ .banner-side-bar .visitors{
+    padding: 1.5rem 0;
+ 
+    
+}
+.banner-side-bar h6{
+    overflow: hidden;
+}
+.banner-side-bar .visitors  h5{
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    line-height: 1.7;
+    
+}
+.banner-side-bar .visitors  h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+ .banner-side-bar .side-bar-content .icon {
+    color:#ccc;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: 1s all;
+}
+.banner-side-bar .side-bar-content .icon:hover{
+   color: var(--primary-color);
+   transform: scale(1.1);
+}
+ .banner-side-bar .side-bar-content h6{
+    margin-bottom: 2.25rem;
+    color:#ccc;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+ .banner-side-bar .side-bar-content .logo img{
+    width:5.918rem;
+    height: 7.5;
+   
+} 
+ .side-bar-icons i{
+    color: #fff;
+    background-color: var(--primary-color);
+    font-weight: 700;
+}
+.primary-color{
+    color: var(--primary-color);
+}
+
+
+@media (max-width:992px){
+     .banner-side-bar{
+        display: none;
+    }}
+

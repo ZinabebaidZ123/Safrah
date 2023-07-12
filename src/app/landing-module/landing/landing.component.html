@@ -1,0 +1,281 @@
+<!-- start home section------------------------------ -->
+
+
+
+
+
+<!-- end of acheivment section------------------------------------- -->
+<!-- start of about-us section ----------------------------------------->
+<app-banner></app-banner>
+
+<app-top-landing-sections></app-top-landing-sections>
+<app-centered-landing-sections></app-centered-landing-sections>
+
+
+
+ <section class="our-services">
+  <h2 class="text-center"  data-aos-easing="linear"
+  data-aos-duration="1400"   data-aos-delay="300" data-aos="fade-left"> ماذا نقدم ؟</h2>
+ <div class="services">
+  <div class="service-content">
+  
+       <div class="serv-container d-flex "   *ngFor="let item of list ; let i = index">
+  
+   <div class="num  d-flex justify-content-center align-items-center" data-aos-easing="linear"
+   data-aos-duration="1400"   data-aos-delay="400" data-aos="zoom-in">
+    <p>{{item.progNum}}</p>
+   </div>
+   <div class="service  d-flex w-100 justify-content-between align-items-center"  data-aos-easing="linear"
+   data-aos-duration="1400"   data-aos-delay="300" data-aos="zoom-in">
+    <div class=" w-100   " >
+              
+                
+      <div class="button w-100        ">
+  
+          <div class="d-flex justify-content-between align-items-center">
+  
+        <span>{{item.heading}}</span>
+          <a class="" data-bs-toggle="collapse" href="#{{item.btnId}}" role="button" aria-expanded="false" aria-controls="collapseExample"  >
+              <i class="fa-solid fa-angle-down "  id="first-btn"  ></i>
+            </a>
+         </div>
+  
+   
+         <div class="collapse w-100 " id="{{item.btnId}}">
+          <div class="card card-body d-flex justify-content-center align-items-center w-100">
+           <ul class="w-100  mt-3" *ngFor="let  content of item.content">
+          
+              <div class = " d-flex justify-content-between mb-3 align-items-center">
+                  <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-circle ms-2"></i>
+                  <li>{{content.li}}</li>
+                  </div>
+                  <button (click)="downloadPDF(content.pdf)"><img src="../../../assets/imgs/pdf-icon.png" alt=""></button>
+              </div>
+
+              
+            
+           </ul>
+           <div class="line"></div>
+            </div>
+      </div>
+  </div>
+  
+  
+  </div>
+   </div>
+  </div>
+
+
+
+
+
+</div>
+
+
+
+<div class="service-map d-lg-block d-md-none"  >
+  <div class="top-content m-4">
+    <h3>تعلم</h3>
+  </div>
+  <img src="../../assets/imgs/Maps.png" alt="">
+  <div class="bottom-content w-100  m-4 ps-5 d-flex justify-content-end">
+    <h3>من أى مكان</h3>
+   </div>
+</div>
+</div>
+</section>
+<!-- end of services section----------------------------------------------- -->
+  <!-- start of acheivment section--------------------------------------------------- -->
+  <section class="acheivment"  >
+    <div class="container">
+      <h2 class="text-center"  data-aos-easing="linear"
+      data-aos-duration="1400"   data-aos-delay="300" data-aos="fade-right">إنجازاتنا</h2>
+      <div class="row justify-content-center align-items-center ">
+     
+        <div class="col-lg-3 col-sm-6 ach-container" data-aos-easing="linear"
+        data-aos-duration="1400"   data-aos-delay="300" data-aos="zoom-in">
+          <div class="ach-content text-center">
+            <div class="ach-img">
+              <img src="../../assets/imgs/icon2.png" alt="" />
+            </div>
+            <h4>المبادرات</h4>
+            <h5>{{count1}}</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 ach-container"   data-aos-easing="linear"
+        data-aos-duration="1400"   data-aos-delay="300" data-aos="zoom-in">
+          <div class="ach-content text-center">
+            <div class="ach-img">
+              <img src="../../assets/imgs/icon3.png" alt="" />
+            </div>
+            <h4>المجازات</h4>
+            <h5>{{count2}}</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 ach-container"  data-aos-easing="linear"
+        data-aos-duration="1400"   data-aos-delay="300" data-aos="zoom-in">
+          <div class="ach-content text-center">
+            <div class="ach-img">
+              <img src="../../assets/imgs/icon4.png" alt="" />
+            </div>
+            <h4>الخريجات</h4>
+            <h5>{{count3}}</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 ach-container"  data-aos-easing="linear"
+        data-aos-duration="1400"   data-aos-delay="300" data-aos="zoom-in">
+          <div class="ach-content text-center">
+            <div class="ach-img">
+              <img src="../../assets/imgs/icon5.png" alt="" />
+            </div>
+            <h4>
+              المستفيدات <br />
+              من البرامج
+            </h4>
+            <h5>{{count4}}</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 ach-container"  data-aos-easing="linear"
+        data-aos-duration="1400"   data-aos-delay="300" data-aos="zoom-in">
+          <div class="ach-content text-center">
+            <div class="ach-img">
+              <img src="../../assets/imgs/icon6.png" alt="" />
+            </div>
+            <h4>إجمالى <br />المستفيدات</h4>
+            <h5>{{count5}}</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 ach-container" data-aos-easing="linear"
+        data-aos-duration="1400"   data-aos-delay="300" data-aos="zoom-in">
+          <div class="ach-content text-center">
+            <div class="ach-img">
+              <img src="../../assets/imgs/icon7.png" alt="" />
+            </div>
+            <h4>
+              المستفيدات <br />
+              من الدبلومات
+            </h4>
+            <h5>{{count6}}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="about-us">
+  <div class="container">
+    <h2 class="text-center" data-aos-easing="linear"
+    data-aos-duration="1400"   data-aos-delay="300" data-aos="fade-down">ماذا قالو عنا؟</h2>
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-6">
+        <div class="about-us-content">
+
+          <h3>الأستاذ عبد النور</h3>
+             
+          <p data-aos-easing="linear"
+          data-aos-duration="1400"   data-aos-delay="300" data-aos="zoom-in">إنّ هذه الجمعيّة تُعْنى بالبنت في جميع مراحل حياتها كي تقرأ القرآن الكريم، وتجوّده وتحفظه، وتفسره، وتتدبّره، وتثبّت حفظها، وتأخذ الإجازات في قراءاته والتخصّص في علومه. وبفضل الله تعالى يصحبها القرآن الكريم زوجة، وأمّاً وربّة بيت، وكبيرةً في السّنّ، كي تقترب من القرآن الكريم ولو بفكِّ حروفه. وقد سخّر الله المتطوّعات والعاملات الّاتي يعملن في خدمة القرآن الكريم في جميع مجالاته.</p>
+       
+          <div class="about-btn  w-100  ">
+            <button class="next ">  
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <button class="prev">  <i class="fa-solid fa-chevron-left"></i></button>
+          </div>
+
+            </div>
+       
+          </div>
+      
+      
+
+      <div class="col-lg-4">
+        <div class="about-us-box ">
+          </div>
+        
+        </div></div></div>
+  
+</section>
+
+<!-- start of partener section--------------------------------------- -->
+<section class="our-partener" >
+
+  <h2 class="text-center"  data-aos-easing="linear"
+  data-aos-duration="1400"   data-aos-delay="300" data-aos="fade-right">شركاؤنا</h2>
+ <div class="partener"  >
+  <div class="logo ">
+    <img src="../../../assets/imgs/كافل.png" alt="">
+    <h6 class="text-center" >كافل لرعاية الأيتام بمنطقة مكة المكرمة </h6>
+  </div>
+  <div class="logo ">
+    <img src="../../../assets/imgs/وقف كرامة.png" alt="">
+    ا<h6 class="text-center">وقف كرامة أهل القرآن</h6>
+  </div>
+  <div class="logo ">
+    <img src="../../../assets/imgs/تبيا.png" alt="">
+    <h6 class="text-center">جمعية تبيان</h6>
+  </div>
+  <div class="logo ">
+    <img src="../../../assets/imgs/اوقاف.png" alt="">
+    <h6 class="text-center">أوقاف الضحيان</h6>
+  </div>
+  <div class="logo ">
+    <img src="../../../assets/imgs/معاهد.png" alt="">
+    <h6 class="text-center">مركز معاهد للاستشارات</h6>
+  </div>
+  <div class="logo ">
+    <img src="../../../assets/imgs/معالم.png" alt="">
+    <h6 class="text-center">مركز معالم التدبر</h6>
+ </div>
+ <div class="logo ">
+  <img src="../../../assets/imgs/النبأ.png" alt="">
+  <h6 class="text-center">مؤسسة النبأ العظيم</h6>
+</div>
+<div class="logo ">
+  <img src="../../../assets/imgs/ابن المبارك.png" alt="">
+  <h6 class="text-center">مؤسسة فرحان ابن المبارك</h6>
+</div>
+<div class="logo ">
+  <img src="../../../assets/imgs/partener-logo9.png" alt="" class=" mt-5">
+  <h6 class="text-center">القسم النسائي مشروع تعظيم البلد الحرام</h6>
+</div>
+
+<div class="logo pe-2 ">
+  <img src="../../../assets/imgs/logo pg.png" alt="" class=" mt-5 ">
+  <h6 class="text-center">     شركة أفنولوجى للتقنيات  والتسويق الإلكترونى</h6>
+</div>
+</div>
+</section>
+
+<!-- end of partener section---------------------------------------- -->
+<!-- start of video section----------------------------------------- -->
+<section class="videos"  > 
+  <div class="container ">
+    <div class="row  justify-content-center align-items-center ">
+      <div class="col-lg-4   mb-3 video-content  d-flex justify-content-center ">
+        <div class="video-box ">
+          <iframe width="300" height="215" src="https://www.youtube.com/embed/xuoHRGR-irg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+</div>
+<div class="col-lg-4 mb-3  video-content   d-flex justify-content-center ">
+        <div class="video-box">
+          <iframe width="300" height="215" src="https://www.youtube.com/embed/xuoHRGR-irg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+</div>
+
+<div class="col-lg-4 mb-3 video-content  d-flex justify-content-center  ">
+        <div class="video-box   ">
+          <iframe width="300" height="215" src="https://www.youtube.com/embed/xuoHRGR-irg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<app-about-diplomas-footer></app-about-diplomas-footer>
+
+

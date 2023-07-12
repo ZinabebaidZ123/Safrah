@@ -1,0 +1,199 @@
+/* start charity establishment section */
+
+h2 span{
+    position: relative;
+    z-index: 66;
+    display: inline-block;
+    
+}
+h2 span::before{
+    content: "";
+    position: absolute;
+    bottom: 1.7rem;
+    width: 100%;
+    height: 1rem;
+    z-index: -1;
+    background-color: var(--primary-color);
+}
+body{
+    background-color: #ccc;
+}
+
+ .right-content{
+    background-color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 700;
+    width: 40%;
+    padding: 1.688rem;
+    text-align: center;
+}
+ .left-content-box{
+    width: 58%;
+}
+ .left-content{
+    width: 58%;
+    background-color: #fff;
+    text-align: center;
+    padding:1.688rem;
+    
+}
+ .left-content-box .left-content{
+    width: 100%;
+}
+
+/* start executive managment section---------------- */
+.left-circle2{
+    position: relative;
+    z-index: 666;
+}
+.left-circle2::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem; 
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    z-index: -1;
+}
+@media(max-width:567px){
+    .left-circle2::before{
+        content: "";
+        position: absolute;
+        left: 3rem;
+        top: 0.5rem; 
+        width: 6.25rem;
+        height: 6.25rem;
+        border-radius: 50%;
+        background-color: var(--primary-color);
+        z-index: -1;
+    }
+}
+.executive-management i{
+    font-size: 1.75rem;
+}
+.executive-management h3{
+    position: relative;
+    z-index: 777;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 2rem;
+}
+.executive-management h3::before{
+    content: "";
+    position: absolute;
+    bottom: 1.5rem;
+    width: 93%;
+    height: 1.75rem;
+    z-index: -1;
+    background-color: var(--primary-color);
+}
+
+.executive-management h4{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.executive-management h5{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.executive-management .contact-info {
+    margin-bottom: 3rem;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+@media (max-width:768px){
+    .executive-management .contact-info {
+        margin-bottom: 3rem;
+        height: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+}
+@media (max-width:992px){
+    .executive-management h3{
+        font-size: 2rem;
+
+    }
+    .executive-management h3::before{
+        content: "";
+        position: absolute;
+        bottom: 0.75rem;
+        width: 93%;
+        height: 1.25rem;
+        z-index: -1;
+        background-color: var(--primary-color);
+    }
+}
+@media(max-width:400px){
+    .executive-management h3::before{
+        content: "";
+        background-color: transparent;
+    }
+}
+.content {
+    position: relative;
+    width: 100%;
+    z-index: 999;
+   
+}
+
+ .toggle{
+    position: absolute;
+    left: 2rem;
+    top: 1.75rem;
+    transform: translateY(-50%);
+    z-index: 888;
+}
+.card{
+    margin-top: 5rem !important;
+    border: none !important;
+}
+.card i{
+    color: var(--primary-color);
+}
+.card img{
+    width: 4rem;
+    margin-bottom: 2rem;
+    
+}
+.card button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+section .content   ul{
+    padding: 0 1rem;
+}
+section .content   ul li{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.8;
+}
+section .content ul li i{
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+@media(max-width:992px){
+    section .content   ul li{
+        font-size: 1.5rem;
+
+    }
+
+    section .content ul li i{
+        font-size: 1rem;
+        margin-left: 0.5rem;
+    }
+}

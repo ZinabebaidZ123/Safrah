@@ -1,0 +1,314 @@
+/* start of services section**************************************** */
+
+
+.services {
+    display: flex;
+    overflow: hidden;
+}
+.services .service-content{
+    flex-grow: 3;
+    width: 75%;
+}
+
+.services .serv-container{
+    width: 75%;
+    margin:2.125rem  auto;
+}
+@media (max-width:992px){
+    .services .service-content{
+        width: 100%;
+    }
+    .services .serv-container{
+        width: 100%;
+    }
+}
+.services .service{
+    background-color: var(--primary-color);
+    width: 100%;
+}
+
+.services .service p{
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-right: 1.8rem;
+    margin-top: 0.85rem;
+    color:#fff;
+
+}
+
+.services .service a{
+    color: #fff;
+    margin-left: 1rem;
+}
+.services .num {
+    background-color: var(--primary-color);
+    margin-left: 1.25rem ; 
+    width: 10%;
+ 
+}
+
+.services .num p{
+    font-size: 1.875rem;
+    font-weight: 700;
+    color:#fff;
+}
+.services .service-map{
+    background-color: var(--primary-color);
+    width: 25%;
+}
+.our-services h2{
+    position: relative;
+    z-index: 2;
+}
+.our-services h2::before{
+    content: "";
+    position: absolute;
+    bottom: 2rem;
+    width:5.5rem;
+    height: 0.75rem;
+    z-index: -1;
+    background-color: var(--primary-color);
+}
+.services .service-content h3{
+    font-size: 2.938rem;
+    font-weight: 700;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+.services .service{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.services .service li{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color:#000;
+}
+
+.services .service span{
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.services .service-map img{
+    position: relative;
+    left: 40%;
+    top: 1rem;
+}
+.services .service-map{
+    overflow: hidden;
+}
+.services .service-map h3{
+    font-size: 3rem;
+    font-weight:900;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.services p{
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.8;
+    
+}
+
+
+/* media query for services section */
+@media (max-width:400px){
+    .services .num p , .services .service p{
+        font-size: 0.75rem;
+    }
+}
+ @media (max-width:915px){
+    .services .service-map{
+        display: none;
+    }
+}
+@media (max-width:1200px){
+ 
+    .services h2{
+        margin-bottom: -7rem;
+    }
+    .services .service-content h3{
+        font-size: 2.2rem;
+    }
+    .services .over-lay{
+        display: none;
+    }
+    .services .service-content{
+        padding-right: 1.5rem;
+        padding-left: 0.5rem;
+    }
+}
+@media (max-width:992px){
+    .services .service p{
+        font-size: 1.25rem;
+    }
+    .services .num p{
+        font-size: 1.25rem;
+    }
+    .services .num{
+        width:10%;
+    }
+}
+.acheivment h2{
+    margin-bottom: 3.75rem;
+}
+.acheivment .ach-content{
+    padding-bottom: 4.375rem;
+}
+ .acheivment .ach-img{
+    background-color: #fff;
+    border-radius: 50%; 
+    padding: 1.5rem ;
+    text-align: center;
+    width: 35%;
+    margin: auto;
+    transition: 1s all;
+} 
+.acheivment .ach-img:hover{
+    background-color: #f3eeee;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.acheivment img{
+    width: 2.826rem;
+    height: 3.25rem;
+}
+.acheivment h4 , h5{
+    margin-top: 0.75rem;
+    font-size: 2rem;
+    line-height: 1.7;
+    font-weight: 700;
+}
+/* media query for acheivment section */
+@media (max-width:566px){
+    .acheivment .ach-container{
+        width: 40% !important;
+    }
+    .acheivment .ach-img{
+          width: 50%;
+    }
+}
+/* start of about us section style**************************** */
+
+.about-us h3{
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.8;
+}
+.about-us p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-top: 0.5rem;
+}
+.about-us .about-btn button{
+    padding: 1rem  1.5rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+}
+.about-us .about-btn  .next{
+    margin-left: 3.125rem;
+}
+.about-us-box{
+    width: 25.125rem;
+    height: 21.875rem;
+    background-color: var(--primary-color);
+}
+/* media query for about us section */
+@media(max-width:992px){
+.about-us .about-us-content{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1.25rem;
+}
+.about-us .about-us-box{
+    width: 100%;
+    padding: 1.25rem;
+}}
+/* start of partener section style*********************** */
+.partener {
+    padding: 0 1.25rem;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.partener .logo{
+ width: 25%;
+ text-align: center;
+ margin-bottom: 3rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+
+}
+
+.partener .logo h6{
+    font-weight: 700;
+    font-size: 1.25rem;
+    /* margin-top: 0.25rem; */
+}
+.our-partener h2{
+    position: relative;
+    z-index: 2;
+}
+.our-partener h2::before{
+   content: "";
+   position: absolute;
+   right: 49%;
+   bottom: 2rem;
+   width:4.9rem;
+   height: 0.75rem;
+   z-index: -1;
+   background-color: var(--primary-color);
+}
+.partener img{
+    /* width: 12.5rem;
+    height: 12.5rem; */
+    max-width: 12.5rem;
+   
+}
+@media (max-width:580px){
+    .partener {
+        justify-content: center;
+        align-items: center;
+    }
+    .partener .logo{
+        width:45%;
+        text-align: center;
+        
+
+    }
+}
+.card{
+    margin-top: 5rem !important;
+    border: none !important;
+}
+.card i{
+    color: var(--primary-color);
+}
+.card img{
+    width: 2rem;
+    /* transform: translateY(-1.25rem); */
+    
+}
+.card button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+section .content   ul{
+    padding: 0 1rem;
+}
+
+section .content ul li i{
+    font-size: 1.5rem;
+ 
+}

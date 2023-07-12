@@ -1,0 +1,85 @@
+<app-navbar></app-navbar>
+<app-banner></app-banner>
+<section class="news"  >
+    <img src="../../assets/imgs/news-bg.png" alt="" class="layer" />
+    <div class="container">
+      
+      <div class="heading"><h2 class="text-center right-circle" data-aos-easing="linear"
+        data-aos-duration="1400"   data-aos-delay="800" data-aos="fade-right" >أخبارنا</h2></div>
+       
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">أكاديمى</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">الإنجازات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">مشاركات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ">فعاليات</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row justify-content-between align-items-center" data-aos="fade-down" >
+        
+        <div class="col-lg-4 col-md-6" *ngFor="let new of newsList">
+          <!-- <a routerLink="/news-details-page"> -->
+
+          <div class="news-card">
+            
+            <div *ngIf ="new.imgSrc.includes('classera') ; else otherImg ">
+            <div class="clasera-logo w-100  img">
+              <a routerLink="/news-details-page">
+              <img [src]="new.imgSrc " alt="">
+              </a>
+            </div>
+</div>
+<ng-template #otherImg>
+            <div class="img">
+              <a routerLink="/news-details-page">
+
+                <img
+                  [src]="new.imgSrc"
+                  alt=""
+                  class="w-100"
+                />
+                </a>
+                </div></ng-template>
+            
+            <div class="card-content">
+              <div class="box">
+                <p>
+                  {{new.content}}
+                </p>
+              </div>
+            
+              <div class="card-date">
+              <h6 class="">
+                15 <br/>
+                يناير
+              </h6></div>
+            </div>
+            
+          </div>
+        <!-- </a> -->
+        </div>
+        
+        <div class="know-more d-flex justify-content-center">
+            <button (click) ="seeMore()">استكشف أكثر</button>
+           </div>
+        </div>
+        </div>
+</section>
+
+<app-about-diplomas-footer></app-about-diplomas-footer>
